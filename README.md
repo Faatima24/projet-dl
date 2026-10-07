@@ -36,8 +36,6 @@ Prétraitement commun (`preprocess_face`) : niveaux de gris, 48×48, pixels en `
 └── reports/                 # tableau d’expériences exporté
 ```
 
-Fatima mène les expressions, y compris sur chaque frame. Nicolas mène la détection. Les deux participent aux deux volets.
-
 ## Installation
 
 Python 3.11.
