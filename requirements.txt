@@ -1,0 +1,18 @@
+# Environnement local du projet Deep Learning — expressions faciales
+# Python 3.11 recommandé (TensorFlow 2.16–2.20).
+# Création : python3.11 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+# Le notebook de soutenance doit aussi tourner sur Google Colab ; ce fichier sert au travail local.
+
+tensorflow>=2.16,<2.21
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.4
+opencv-python>=4.9
+Pillow>=10.2
+ultralytics>=8.2
+jupyter>=1.0
+notebook>=7.0
+ipykernel>=6.29
+tqdm>=4.66

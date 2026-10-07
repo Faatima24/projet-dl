@@ -1,0 +1,44 @@
+# Environnement et secrets
+.venv/
+venv/
+env/
+.env
+.kaggle/
+kaggle.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Données et poids (trop lourds pour git ; le notebook documente comment les obtenir)
+data/*
+!data/.gitkeep
+models/*
+!models/.gitkeep
+*.keras
+*.h5
+*.pt
+*.pth
+*.onnx
+*.weights
+
+# Vidéos et sorties de démo
+*.mp4
+*.avi
+*.mov
+demo_outputs/
+
+# Plan de travail interne, hors dépôt partagé
+agents/
+
+# OS et éditeurs
+.DS_Store
+.idea/
+.vscode/
+.cursor/
