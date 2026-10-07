@@ -1,0 +1,15 @@
+version: "3"
+
+tasks:
+  build:
+    desc: Construit l'exécutable de l'application webcam avec PyInstaller
+    cmds:
+      - >-
+        uv run pyinstaller --noconfirm --windowed --name ExpressionsFaciales
+        --add-data models/cnn_v1.keras:models
+        --add-data models/yolov8n-face.pt:models
+        --collect-data ultralytics
+        app.py
+      # macOS : autorisation d'accès à la caméra, puis re-signature du bundle
+      - plutil -insert NSCameraUsageDescription -string "Détection des expressions faciales" dist/ExpressionsFaciales.app/Contents/Info.plist
+      - codesign --force --deep --sign - dist/ExpressionsFaciales.app

@@ -42,3 +42,6 @@ agents/
 .idea/
 .vscode/
 .cursor/
+build/
+dist/
+*.spec
