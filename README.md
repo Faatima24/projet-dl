@@ -46,11 +46,11 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Placer le dataset dans `data/fer2013/`, avec un dossier par classe sous `train/` et `test/` :
+Placer le dataset dans `data/`, avec un dossier par classe sous `train/` et `test/` :
 
 ```text
-data/fer2013/train/angry/*.jpg
-data/fer2013/test/happy/*.jpg
+data/train/angry/*.jpg
+data/test/happy/*.jpg
 ```
 
 Le notebook doit aussi s’exécuter sur Google Colab. Les images et les fichiers `.keras` restent hors du dépôt git.
