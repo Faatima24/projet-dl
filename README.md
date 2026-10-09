@@ -25,12 +25,9 @@ Prétraitement commun (`preprocess_face`) : niveaux de gris, 48×48, pixels en `
 ├── README.md
 ├── requirements.txt
 ├── Projet_DL_Expressions_faciales (1).pdf
+├── app.py                   # webcam : détection YOLO + expression par le CNN
 ├── notebooks/
 │   └── expressions_faciales.ipynb
-├── src/
-│   ├── expressions.py       # prétraitement et prédiction d’expression
-│   ├── detection.py         # détection des visages
-│   └── pipeline.py          # image et vidéo annotées
 ├── data/                    # FER-2013 en local, ignoré par git
 ├── models/                  # poids .keras, ignorés par git
 └── reports/                 # tableau d’expériences exporté

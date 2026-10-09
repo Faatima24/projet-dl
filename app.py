@@ -18,7 +18,7 @@ os.environ.pop("QT_QPA_PLATFORM_PLUGIN_PATH", None)
 
 BASE_DIR = Path(getattr(sys, "_MEIPASS", Path(__file__).parent))
 CNN_PATH = BASE_DIR / "models" / "cnn_v1.keras"
-YOLO_PATH = BASE_DIR / "models" / "yolov8n-face.pt"
+YOLO_PATH = BASE_DIR / "models" / "yolov11l-face.pt"
 
 CLASS_NAMES = ["angry", "disgust", "fear", "happy", "sad", "surprise", "neutral"]
 IMAGE_SIZE = (48, 48)
